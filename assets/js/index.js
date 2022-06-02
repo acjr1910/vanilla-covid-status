@@ -102,7 +102,6 @@ const renderBarChart = (data) => {
 // Main
 (async () => {
   const covidStatus = await getCovidStatusSummary();
-  console.log(covidStatus)
   renderKpis(covidStatus.Global);
   renderPieChart(covidStatus.Global);
   renderBarChart(covidStatus.Countries);
